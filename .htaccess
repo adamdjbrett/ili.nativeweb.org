@@ -1,0 +1,32 @@
+RewriteEngine On
+
+# Explicit legacy path redirects (from README)
+Redirect 301 http://ili.nativeweb.org/index.html https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/images/ https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/cgi-bin/ https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/favicon.ico https://indigenouslawinstitute.com/favicon.ico
+Redirect 301 http://ili.nativeweb.org/favicon.gif https://indigenouslawinstitute.com/img/favicon.svg
+Redirect 301 http://ili.nativeweb.org/ili_info.html https://indigenouslawinstitute.com/ili_info/
+Redirect 301 http://ili.nativeweb.org/sdrm_art.html https://indigenouslawinstitute.com/sdrm_art/
+Redirect 301 http://ili.nativeweb.org/rice.html https://indigenouslawinstitute.com/rice/
+Redirect 301 http://ili.nativeweb.org/ricb.html https://indigenouslawinstitute.com/ricb/
+Redirect 301 http://ili.nativeweb.org/pope.html https://indigenouslawinstitute.com/pope/
+Redirect 301 http://ili.nativeweb.org/perspect.html https://indigenouslawinstitute.com/perspect/
+Redirect 301 http://ili.nativeweb.org/peacepact.html https://indigenouslawinstitute.com/peacepact/
+Redirect 301 http://ili.nativeweb.org/newstudy.html https://indigenouslawinstitute.com/newstudy/
+Redirect 301 http://ili.nativeweb.org/indsite4.html https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/indsite3.html https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/indsite2.html https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/indsite1.html https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/indexTEMP.html https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/indexOLD.html https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/indexA.html https://indigenouslawinstitute.com/
+Redirect 301 http://ili.nativeweb.org/ictarticl.html https://indigenouslawinstitute.com/ictarticl/
+Redirect 301 http://ili.nativeweb.org/global_liberation.html https://indigenouslawinstitute.com/global_liberation/
+Redirect 301 http://ili.nativeweb.org/dovision.html https://indigenouslawinstitute.com/dovision/
+Redirect 301 http://ili.nativeweb.org/constitution.html https://indigenouslawinstitute.com/constitution/
+Redirect 301 http://ili.nativeweb.org/amau.html https://indigenouslawinstitute.com/amau/
+
+# Catch-all: anything else on ili.nativeweb.org goes to site root
+RewriteCond %{HTTP_HOST} ^(www\.)?ili\.nativeweb\.org$ [NC]
+RewriteRule ^(.*)$ https://indigenouslawinstitute.com/ [R=301,L]
